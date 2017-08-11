@@ -6,8 +6,8 @@
     box-sizing: border-box;
 }
 
-min-html{
-    height: 100%;
+html{
+    min-height: 100%;
     font-family: 'Open Sans', sans-serif;
     color: #313239;
     margin: 0;

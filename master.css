@@ -104,8 +104,17 @@ body {
     overflow: hidden;
 }
 
+<<<<<<< HEAD
 .firstProgram .button {
     background-color: white;
+=======
+.textInput:focus {
+    border: solid 2px #12D8FA;
+}
+
+.button {
+    background-color: brown;
+>>>>>>> origin/master
     color: #313239;
     display: block;
     padding: 15px 50px;

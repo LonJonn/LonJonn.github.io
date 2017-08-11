@@ -1,47 +1,47 @@
 var colourList = ['#ff8787', '#f783ac', '#da77f2', '#748ffc', '#3bc9db', '#69db7c', '#ffa94d'];
 
-
 function firstRun() {
-    var textInput = document.getElementById("textInput");
-    var textOutput = document.getElementById("textOutput");
     var randomNumber = Math.floor(Math.random() * colourList.length);
+    var first_textInput = document.getElementById("first_textInput");
+    var first_textOutput = document.getElementById("first_textOutput");
+    var first_body = document.getElementById("first_body");
+    var first_header = document.getElementById('first_header')
 
+    first_textOutput.style.transition = "all 0.6s, opacity 0.3s 0.5s";
+    first_body.style.transition = "all 0.4s";
 
-    document.getElementById("textOutput").style.transition = "all 0.6s, opacity 0.3s 0.5s";
-    document.getElementById("body").style.transition = "all 0.4s";
+    first_textOutput.innerHTML = 'You are so ' + first_textInput.value + '!';
+    first_textOutput.style.background = colourList[randomNumber];
+    first_textOutput.style.letterSpacing = randomNumber + 'px';
+    first_body.style.height = "310px";
+    first_textOutput.style.opacity = "1";
 
-    textOutput.innerHTML = 'You are so ' + textInput.value + '!';
-    textOutput.style.background = colourList[randomNumber];
-    textOutput.style.letterSpacing = randomNumber + 'px';
-    document.getElementById("body").style.height = "310px";
-    textOutput.style.opacity = "1";
-
-    if (textInput.value === 'Leon') {
-        textInput.style.border = "solid 2px rgb(58, 222, 133)";
+    if (first_textInput.value === 'Leon') {
+        first_textInput.style.border = "solid 2px rgb(58, 222, 133)";
     }
 }
 
 function hideTextOutput() {
-    document.getElementById("textOutput").style.transition = "opacity 0.3s 0s";
-    document.getElementById("textOutput").style.opacity = "0"
-    document.getElementById("body").style.transition = "all 0.5s, height 0.4s 0.5s, padding 0.4s 0.5s";
-    document.getElementById("body").style.height = "255px";
+    first_textOutput.style.transition = "opacity 0.3s 0s";
+    first_textOutput.style.opacity = "0"
+    first_body.style.transition = "all 0.5s, height 0.4s 0.5s, padding 0.4s 0.5s";
+    first_body.style.height = "255px";
 }
 
 function minimise() {
     hideTextOutput();
-    document.getElementById('textInput').value = ""
-    document.getElementById('header').style.borderRadius = "18px";
-    document.getElementById("body").style.transition= "all 0.4s, height 0.4s 0.7s, padding 0.4s 0.7s";
-    document.getElementById("body").style.opacity = "0";
-    document.getElementById("body").style.height = "0";
-    document.getElementById("body").style.padding = "0";
+    first_textInput.value = ""
+    first_header.style.borderRadius = "18px";
+    first_body.style.transition= "all 0.4s, height 0.4s 0.7s, padding 0.4s 0.7s";
+    first_body.style.opacity = "0";
+    first_body.style.height = "0";
+    first_body.style.padding = "0";
 }
 
 function maximise() {
-    document.getElementById('header').style.borderRadius = "18px 18px 0 0";
-    document.getElementById("body").style.transition= "all 0.4s 0.7s, height 0.4s 0s, padding 0.4s 0s";
-    document.getElementById("body").style.opacity = "1";
-    document.getElementById("body").style.height = "255px";
-    document.getElementById("body").style.padding = "26px 0";
+    first_header.style.borderRadius = "18px 18px 0 0";
+    first_body.style.transition= "all 0.4s 0.7s, height 0.4s 0s, padding 0.4s 0s";
+    first_body.style.opacity = "1";
+    first_body.style.height = "255px";
+    first_body.style.padding = "26px 0";
 }

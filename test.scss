@@ -7,7 +7,7 @@ $color-maximise: #51cf66;
 $color-quit: #ff6b6b;
 $gradient: #1FA2FF, #12D8FA, #81f1c9;
 
-
+//
 * {
     box-sizing: border-box;
 }
@@ -22,4 +22,13 @@ html {
 
 body {
     margin: 0;
+}
+
+.firstProgram {
+    background-color: white;
+    color: #313239;
+    border-radius: 18px;
+    width: 500px;
+    height: auto;
+    margin: 70px auto 0;
 }

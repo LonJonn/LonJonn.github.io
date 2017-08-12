@@ -3,19 +3,21 @@ var colourList = ['#ff8787', '#f783ac', '#da77f2', '#748ffc', '#3bc9db', '#69db7
 $(document).ready(function(){
 
 
-  $('.firstProgram .minimise').on('click', function (e) {
-    $('.firstProgram .content').addClass('hidden');
-    $('.firstProgram .header').css('border-radius', '18px')
+  $('.minimise').on('click', function (e) {
+    var programNo = $(this).parent().parent().prop('className');
+    $('.' + programNo + ' .content').addClass('hidden');
+    $('.' + programNo + ' .header').css('border-radius', '18px')
 
     setTimeout( function() {
-      $('.firstProgram .content').hide()
+      $('.' + programNo + ' .content').hide()
     }, 1080);
   });
 
-  $('.firstProgram .maximise').on('click', function (e) {
-    $('.content').show()
-    $('.content').removeClass('hidden');
-    $('.firstProgram .header').css('border-radius', '18px 18px 0 0')
+  $('.maximise').on('click', function (e) {
+    var programNo = $(this).parent().parent().prop('className');
+    $('.' + programNo + ' .content').show()
+    $('.' + programNo + ' .content').removeClass('hidden');
+    $('.' + programNo + ' .header').css('border-radius', '18px 18px 0 0')
   });
 
 

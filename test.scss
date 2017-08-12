@@ -1,0 +1,25 @@
+$color-blue: #1FA2FF;
+$color-grey: #4c4d54;
+$color-text: #313239;
+$color-highlight: #12D8FA;
+$color-minimise: #fcc419;
+$color-maximise: #51cf66;
+$color-quit: #ff6b6b;
+$gradient: #1FA2FF, #12D8FA, #81f1c9;
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: $color-text;
+    margin: 0;
+    background: linear-gradient(to bottom right, $gradient);
+}
+
+body {
+    margin: 0;
+}

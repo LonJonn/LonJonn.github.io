@@ -4,22 +4,22 @@
     <meta charset="utf-8">
     <title>シッド・イズ・アー・ファグ</title>
     <link rel="stylesheet" href="test.min.css">
-    <script src=""></script>
+    <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <div class="firstProgram">
-        <!--<div class="header">
+    <div class="firstProgram" id="firstProgram">
+        <div class="header">
             <div class="headerTitle">You Are So...!</div>
-            <div class="bops minimise" onclick=""></div>
-            <div class="bops maximise" onclick=""></div>
             <div class="bops quit"></div>
-        </div>-->
+            <div class="bops maximise" onclick=""></div>
+            <div class="bops minimise" onclick=""></div>
+        </div>
         <div class="content">
             <h1 class='title'>Enter some words~</h1>
-            <input class="textInput" type="text"/>
-            <button class="button" onclick="">mit ● Sub?</button>
-            <!--<p class="textOutput" onclick=""></p>-->
+            <input class="textInput" id="textInput" type="text"/>
+            <button class="button" onclick="firstRun();">mit ● Sub?</button>
+            <p class="textOutput" id="textOutput" onclick="">h</p>
         </div>
     </div>
 </body>

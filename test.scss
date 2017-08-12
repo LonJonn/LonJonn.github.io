@@ -57,6 +57,17 @@ body {
     }
   }
 
+  @keyframes remove {
+    0% {
+    }
+    99% {
+      display: block;
+    }
+    100% {
+      display: none;
+    }
+  }
+
   .minimise {
       background-color: #fcc419;
   }
@@ -81,7 +92,6 @@ body {
       height: 255px;
       padding: 26px 0;
       border-radius: 0 0 18px 18px;
-    }
 
       .title {
         margin: 0;
@@ -142,4 +152,70 @@ body {
         cursor: pointer;
         transition: all 0.6s, opacity 0.3s 0.5s;
       }
+  }
+}
+
+.secondProgram {
+    width: 800px;
+    margin: 70px auto 0;
+    background-color: white;
+    border-radius: 18px;
+
+    .content {
+        height: 210px;
+        padding: 26px 0;
+        border-radius: 0 0 18px 18px;
+
+      .textInput {
+        background-color: $color-lightGrey;
+        display: block;
+        margin: 0 auto;
+        padding: 12px;
+        width: 90%;
+        font-size: 20px;
+        border-radius: 6px;
+        border: solid 2px $color-lightGrey;
+        text-align: center;
+        transition: all 0.7s;
+
+        &:focus {
+            border: solid 2px #12D8FA;
+          }
+      }
+
+      .button {
+        background-color: white;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 50px;
+        border-radius: 100px;
+        font-size: 16px;
+        border: 2px solid #1FA2FF;
+        letter-spacing: 5px;
+        cursor: pointer;
+        transition: all 0.5s;
+
+        &:hover {
+          background-color: #1FA2FF;
+          color: white;
+        }
+      }
+
+      .textOutput {
+        opacity: 0;
+        background-color: $color-blue;
+        color: white;
+        width: 70%;
+        height: 40px;
+        word-break: break-all;
+        line-height: 25px;
+        padding: 10px;
+        border-radius: 4px;
+        text-align: center;
+        margin: 20px auto 0;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.6s, opacity 0.3s 0.5s;
+      }
+  }
 }

@@ -1,12 +1,41 @@
 var colourList = ['#ff8787', '#f783ac', '#da77f2', '#748ffc', '#3bc9db', '#69db7c', '#ffa94d'];
 
-
 function defineVariables(programNo) {
     textInput = document.getElementById(programNo + "textInput");
     textOutput = document.getElementById(programNo + "textOutput");
     content = document.getElementById(programNo + "content");
     header = document.getElementById(programNo + 'header')
 }
+
+function minimise(programNo) {
+
+    defineVariables(programNo)
+
+    if (programNo === "first_") {
+        hideTextOutput();
+    }
+
+    height = content.style.height
+
+    textInput.value = ""
+    header.style.borderRadius = "18px";
+    content.style.transition = "all 0.4s, height 0.4s 0.7s, padding 0.4s 0.7s";
+    content.style.opacity = "0";
+    content.style.height = "0";
+    content.style.padding = "0";
+}
+
+function maximise(programNo) {
+
+    defineVariables(programNo)
+
+    header.style.borderRadius = "18px 18px 0 0";
+    content.style.transition= "all 0.4s 0.7s, height 0.4s 0s, padding 0.4s 0s";
+    content.style.opacity = "1";
+    content.style.height = height;
+    content.style.padding = "26px 0";
+}
+
 
 function firstRun() {
     var randomNumber = Math.floor(Math.random() * colourList.length);
@@ -31,31 +60,4 @@ function hideTextOutput() {
     textOutput.style.opacity = "0"
     content.style.transition = "all 0.5s, height 0.4s 0.5s, padding 0.4s 0.5s";
     content.style.height = "255px";
-}
-
-function minimise(programNo) {
-
-    defineVariables(programNo)
-
-    if (programNo === "first_") {
-        hideTextOutput();
-    }
-
-    textInput.value = ""
-    header.style.borderRadius = "18px";
-    content.style.transition= "all 0.4s, height 0.4s 0.7s, padding 0.4s 0.7s";
-    content.style.opacity = "0";
-    content.style.height = "0";
-    content.style.padding = "0";
-}
-
-function maximise(programNo) {
-
-    defineVariables(programNo)
-    
-    header.style.borderRadius = "18px 18px 0 0";
-    content.style.transition= "all 0.4s 0.7s, height 0.4s 0s, padding 0.4s 0s";
-    content.style.opacity = "1";
-    content.style.height = "255px";
-    content.style.padding = "26px 0";
 }

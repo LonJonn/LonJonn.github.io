@@ -4,13 +4,13 @@ $(document).ready(function() {
 
 //firstProgram////////////////////
     $('.firstProgram .button').on('click', function() {
-        $('.content').css('height', '310px').css('transition', 'all 0.4s 0.4s, height 0.4s 0s');
-        $('.textOutput').css('opacity', '1').css('transition', 'opacity 0.4s 0.4s');
+        $('.firstProgram .content').css('height', '300px').css('transition', 'all 0.4s 0.4s, height 0.4s 0s');
+        $('.firstProgram .textOutput').css('opacity', '1').css('transition', 'opacity 0.4s 0.4s');
     });
 
     $('.firstProgram .textOutput').on('click', function () {
-        $('.content').css('transition', 'opacity 0.4s, height 0.4s 0.7s, padding 0.4s 0.7s').css('height', '255px');
-        $('.textOutput').css('transition', 'opacity 0.4s').css('opacity', '0');
+        $('.firstProgram .content').css('transition', 'opacity 0.4s, height 0.4s 0.7s, padding 0.4s 0.7s').css('height', '250px');
+        $('.firstProgram .textOutput').css('transition', 'opacity 0.4s').css('opacity', '0');
     });
 //////////////////////////////////
 

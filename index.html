@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="firstProgram">
+    <section class="firstProgram">
         <section class="header" id="first_header">
             <div class="headerTitle">You Are So...!</div>
             <div class="bops quit"></div>
@@ -24,19 +24,39 @@
             <button class="button" onclick="firstRun();">mit ● Sub?</button>
             <p class="textOutput" id="first_textOutput"></p>
         </section>
-    </div>
-    <div class="secondProgram">
-        <div class="header" id="second_header">
-            <div class="headerTitle">You Are So...!</div>
+    </section>
+    <section class="secondProgram">
+        <section class="header" id="second_header">
+            <div class="headerTitle">Calculator!</div>
             <div class="bops quit"></div>
             <div class="bops maximise" '></div>
             <div class="bops minimise"'></div>
-        </div>
-        <div class="content" id="second_content">
-            <input class="textInput" id="second_textInput" type="text" />
-            <button class="button">mit ● Sub?</button>
-        </div>
-    </div>
+        </section>
+        <section class="content" id="second_content">
+            <div class="textOutput" id="second_textOutput"/>test</div>
+            <ul>
+                <li class="button other C" onclick='document.getElementById("second_textOutput").innerHTML = ""'>C</li>
+                <li class="button other +/-" onclick='document.getElementById("second_textOutput").innerHTML += "-"'>+/-</li>
+                <li class="button other percentage">%</li>
+                <li class="button sign X">×</li>
+                <li class="button number1" onclick='document.getElementById("second_textOutput").innerHTML += "1"'>1</li>
+                <li class="button number2" onclick='document.getElementById("second_textOutput").innerHTML += "2"'>2</li>
+                <li class="button number3" onclick='document.getElementById("second_textOutput").innerHTML += "3"'>3</li>
+                <li class="button sign /">÷</li>
+                <li class="button number4" onclick='document.getElementById("second_textOutput").innerHTML += "4"'>4</li>
+                <li class="button number5" onclick='document.getElementById("second_textOutput").innerHTML += "5"'>5</li>
+                <li class="button number6" onclick='document.getElementById("second_textOutput").innerHTML += "6"'>6</li>
+                <li class="button sign +">+</li>
+                <li class="button number7" onclick='document.getElementById("second_textOutput").innerHTML += "7"'>7</li>
+                <li class="button number8" onclick='document.getElementById("second_textOutput").innerHTML += "8"'>8</li>
+                <li class="button number9" onclick='document.getElementById("second_textOutput").innerHTML += "9"'>9</li>
+                <li class="button sign -">-</li>
+                <li class="button number0" onclick='document.getElementById("second_textOutput").innerHTML += "0"'>0</li>
+                <li class="button decimal" onclick='document.getElementById("second_textOutput").innerHTML += "."'>・</li>
+                <li class="button sign =">=</li>
+            </ul>
+        </section>
+    </section>
 
 </body>
 

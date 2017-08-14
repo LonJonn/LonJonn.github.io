@@ -31,7 +31,8 @@ $(document).ready(function() {
 
     $('.maximise').on('click', function() {
         var programNo = $(this).parent().parent().prop('className');
-        $('.' + programNo + ' .content').show().removeClass('hidden').css('border-radius', '18px 18px 0 0')
+        $('.' + programNo + ' .content').show().removeClass('hidden');
+        $('.' + programNo + ' .header').css('border-radius', '18px 18px 0 0');
     });
 
 

@@ -31,6 +31,38 @@ body {
     outline: 0;
 }
 
+.nav {
+    background-color: $color-lightGrey;
+    color: $color-text;
+    height: 50px;
+
+    .fa {
+        font-size: 40px;
+        height: 40px;
+        width: 55px;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .icon {
+        float: right;
+        display: inline-block;
+    }
+
+    .navButton {
+        display: inline-block;
+        font-size: 20px;
+        height: 50px;
+        width: 100px;
+        border-style: none;
+        background-color: transparent;
+
+        &:hover {
+            background-color: #ced4da;
+        }
+    }
+}
+
 .header {
     background-color: $color-grey;
     color: white;
@@ -181,8 +213,7 @@ body {
             margin: 7px 5px;
 
             &:hover {
-                background-color: #1FA2FF;
-                color: white;
+                background-color: #dee2e6;
             }
         }
 
@@ -211,13 +242,25 @@ body {
             color: white;
 
             &:hover {
-                background: black;
+                background: #1c7cd6;
             }
         }
 
         .other {
             background-color: #868e96;
             color: white;
+
+            &:hover {
+                background-color: #495057;
+            }
+        }
+
+        .C {
+            background-color: #fab005;
+
+            &:hover {
+                background-color: #f59f00;
+            }
         }
     }
 }

@@ -14,7 +14,7 @@ $gradient: #1FA2FF, #12D8FA, #81f1c9;
 
 html {
     min-height: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: $color-text;
     margin: 0;
     background: linear-gradient(to bottom right, $gradient);
@@ -67,7 +67,7 @@ body {
     background-color: $color-grey;
     color: white;
     height: 30px;
-    padding: 4px 0;
+    padding: 9px 0 0;
     border-radius: 15px 15px 0 0;
     text-align: center;
     transition: border-radius 0.4s 0.5s;
@@ -191,6 +191,7 @@ body {
     margin: 0 auto 70px;
     background-color: white;
     border-radius: 18px;
+    user-select: none;
 
     .content {
         height: 580px;
@@ -237,6 +238,12 @@ body {
             width: 155px;
         }
 
+        .decimal {
+            padding: 4px 0 0;
+        }
+
+
+
         .sign {
             background-color: $color-blue;
             color: white;
@@ -256,6 +263,7 @@ body {
         }
 
         .C {
+            padding: 4px 0 0;
             background-color: #fab005;
 
             &:hover {

@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="master.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="main.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Josefin+Sans|Raleway" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="nav">
+    <!--<section class="nav">
         <button class="navButton">HOME</button>
         <button class="navButton">FIRST</button>
         <button class="navButton">SECOND</button>
         <section class="icon">
             <i class="fa fa-home"></i>
         </section>
-    </div>
+    </section>-->
     <section class="firstProgram">
         <section class="header" id="first_header">
             <div class="headerTitle">You Are So...!</div>
@@ -42,10 +42,10 @@
             <div class="bops minimise"'></div>
         </section>
         <section class="content" id="second_content">
-            <div class="textOutput" id="second_textOutput"/>test</div>
+            <div class="textOutput" id="second_textOutput"/></div>
             <ul>
                 <li class="button other C" onclick='document.getElementById("second_textOutput").innerHTML = ""'>C</li>
-                <li class="button other +/-" onclick='document.getElementById("second_textOutput").innerHTML += "-"'>+/-</li>
+                <li class="button other negative" onclick='document.getElementById("second_textOutput").innerHTML += "-"'>+/-</li>
                 <li class="button other percentage">%</li>
                 <li class="button sign X">×</li>
                 <li class="button number1" onclick='document.getElementById("second_textOutput").innerHTML += "1"'>1</li>

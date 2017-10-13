@@ -67,7 +67,7 @@ body {
     background-color: $color-grey;
     color: white;
     height: 30px;
-    padding: 9px 0 0;
+    padding: 6px 0 0;
     border-radius: 15px 15px 0 0;
     text-align: center;
     transition: border-radius 0.4s 0.5s;
@@ -231,7 +231,7 @@ body {
             margin: 0 auto 30px;
             font-weight: 400;
             letter-spacing: 6px;
-            overflow: scroll;
+            overflow: auto;
         }
 
         .number0 {
@@ -247,6 +247,7 @@ body {
         .sign {
             background-color: $color-blue;
             color: white;
+            line-height: 60px;
 
             &:hover {
                 background: #1c7cd6;

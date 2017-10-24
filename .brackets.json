@@ -8,7 +8,8 @@
                 "sourceComments": "map",
                 "outputStyle": "compressed"
             },
-            "linting.collapsed": false
+            "linting.collapsed": true,
+            "brackets-git.terminalCommand": "C:\\Program Files\\Git\\git-bash.exe"
         }
     }
 }

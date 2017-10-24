@@ -1,15 +1,15 @@
 {
+
+    "sass.enabled": false,
     "path": {
-        "master.scss": {
+        "css/style.scss": {
             "sass.enabled": true,
             "sass.options": {
                 "outputDir": "",
-                "imagePath": null,
-                "sourceComments": "map",
+                "includePaths": [],
+                "sourceComments": false,
                 "outputStyle": "compressed"
-            },
-            "linting.collapsed": true,
-            "brackets-git.terminalCommand": "C:\\Program Files\\Git\\git-bash.exe"
+            }
         }
     }
 }
